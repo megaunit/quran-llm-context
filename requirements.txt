@@ -1,0 +1,13 @@
+# Base dependencies; this is not an exact environment lockfile.
+PyYAML
+requests
+pandas
+sacrebleu
+nltk
+# Additional packages for local model inference and COMET scoring:
+torch
+transformers
+accelerate
+sentencepiece
+protobuf
+unbabel-comet

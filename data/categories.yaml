@@ -1,0 +1,29 @@
+# Rhetorical-function categories (agreed with supervisor).
+# Key = the label exactly as written in the `category` column of verses.csv.
+# `name` and `description` are what the "tone" context condition shows the model.
+# Edit the descriptions freely — they are part of your method, so keep them neutral and short.
+
+الزجر:
+  name: rebuke / deterrence
+  description: The verse sternly rebukes or warns people away from a behaviour or belief.
+الوعيد:
+  name: threat of punishment
+  description: The verse threatens future punishment for those who persist in wrongdoing.
+العذاب:
+  name: description of punishment
+  description: The verse describes the torment that befalls wrongdoers.
+الرحمة:
+  name: mercy
+  description: The verse expresses God's mercy, forgiveness, or compassion.
+السخرية:
+  name: sarcasm / mockery
+  description: The verse is sarcastic or mocking; its literal wording means the opposite of what is intended.
+النعيم:
+  name: bliss of paradise
+  description: The verse describes the rewards and delights granted to the righteous.
+الأمر:
+  name: command
+  description: The verse issues a command or obligation.
+النهي:
+  name: prohibition
+  description: The verse forbids an action.

@@ -1,0 +1,45 @@
+# Public configuration: original experimental values, portable checkpoint paths.
+# Edit the local checkpoint paths before running ALLaM or Fanar.
+dataset: data/verses_combined_with_text.csv
+few_shot: data/few_shot.csv
+categories: data/categories.yaml
+cache: data/cache.json
+results_dir: results
+references:
+  sahih: 20
+  haleem: 85
+  yusufali: 22
+tafsir_id: 16
+neighbor_window: 2
+generation:
+  temperature: 0.0
+  max_tokens: 600
+probe:
+  verses: 60
+  min_ref_words: 12
+  translator_names:
+    sahih: Saheeh International
+    haleem: M.A.S. Abdel Haleem
+    yusufali: Abdullah Yusuf Ali
+models:
+  qwen:
+    enabled: true
+    backend: ollama
+    model: qwen3.8:27b-q8_0
+    think: false
+    workers: 1
+  allam:
+    enabled: false
+    backend: transformers
+    path: ./models/ALLaM-7B-Instruct-preview
+    dtype: bfloat16
+    num_ctx: 4096
+    workers: 1
+  fanar:
+    enabled: false
+    backend: transformers
+    path: ./models/Fanar-2-27B-Instruct
+    dtype: bfloat16
+    chat_template_kwargs:
+      no_thinking: true
+    workers: 1
